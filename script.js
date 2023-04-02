@@ -27,7 +27,6 @@ numbers.forEach((number) => {
     number.addEventListener('click', (event) => {
         inputNumber(event.target.value);
         updateScreen(currentNumber);
-        console.log('numbrr');
     });
 });
 
@@ -64,7 +63,6 @@ const inputOperator = (operator) => {
 operator.forEach((operator) => {
     operator.addEventListener('click', (event) => {
         inputOperator(event.target.value);
-        console.log('opepope');
     });
 });
 
@@ -72,7 +70,6 @@ operator.forEach((operator) => {
 equalSign.addEventListener('click', () => {
     calculate();
     updateScreen(currentNumber);
-    console.log('calculate');
 });
     
 
@@ -86,8 +83,6 @@ const clearAll = () => {
 clearBtn.addEventListener('click', () => {
     clearAll();
     updateScreen(currentNumber);
-    console.log('acccaca');
-        console.log(target.value);
 
 });
     
@@ -103,6 +98,4 @@ inputDecimal = (dot) => {
 decimal.addEventListener('click', (event) => {
     inputDecimal(event.target.value);
     updateScreen(currentNumber);
-    console.log('titik');
-    console.log(event.target.value);
 });
